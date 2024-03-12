@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: snow;
+}
+h2{
+    color: snow;
+}
+h3{
+    color: snow;
+}
+h4{
+    color: snow;
+}
+h5{
+    color: snow;
+}
+h6{
+    color: snow;
+}
+p{
+    color: snow;
+}
+/* navbar */
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: snow !important;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in;
+}
+.nav-link:hover{
+    color: chocolate !important;
+    border-bottom: 2px solid chocolate;
+    transition: 0.3s ease-in;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+/* home_page main page start*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url(https://images.pexels.com/photos/5926378/pexels-photo-5926378.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+.home p{
+    position: absolute;
+    top: 50%;
+    font-size: 80px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+    
+
+}
+.home p:nth-child(1){
+    animation-duration: 3s;
+    
+}
+.home p:nth-child(2){
+    animation-delay: 6s;
+    
+}
+.home p:nth-child(3){
+    animation-delay: 9s;
+    
+}
+.home p:nth-child(4){
+    animation-delay: 12s;
+}
+
+@keyframes text{
+    50%{
+        opacity: 1;
+        animation: infinite;
+    }
+    100%{
+        opacity: 0;
+        animation: infinite;
+    }
+}
+.home span{
+    color: chocolate;
+}
+/* home or main page over */
+
+/* about start */
+/* hr line */
+hr{
+   width: 80px !important;
+   height: 3vh ;
+   color: chocolate !important;
+   
+
+}
+
+.about img{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+}
+.about h2{
+    color: snow;
+}
+.about p{
+    color: wheat;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.about a{
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* about over */
+/* skills- start */
+/* frontend */
+.skills {
+    background-color: black;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px ;
+}
+.skills .row .SKILLS-ICON{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.skills .row .SKILLS-ICON .progress-bar{
+    width: 100%;
+   
+    
+}
+
+
+/* skills- over */
+/* project st */
+
+.project-box img{
+    filter: grayscale(100%);
+    padding: 0 50px;
+    transition: 0.3s ease-in;
+    transform: scale(0.9);
+    aspect-ratio: 3/2;
+    object-fit:cover;
+}
+.project-box img:hover{
+    filter: grayscale(0);
+    transition: 0.5s ease-out;
+    transform: scale(1);
+    
+}
+.project-box h4{
+    padding: 5px 35px;
+}
+.project-box p{
+    padding: 0 40px;
+}
+/* project end */
+/* Contact-st */
+.contact {
+    background-color: black;
+}
